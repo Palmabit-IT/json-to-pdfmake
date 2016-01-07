@@ -17,7 +17,7 @@ function compileHeader(compiled) {
     var args = 'currentPage, pageCount',
         body = 'return ' + JSONfn.stringify(compiled.header) + ';';
 
-    compiled.header = new Function(args, body);
+    compiled.header = new Function(args, replacePageStrings(body));
   }
 
   return compiled;
@@ -32,10 +32,14 @@ function compileFooter(compiled) {
     var args = 'currentPage, pageCount',
         body = 'return ' + JSONfn.stringify(compiled.footer) + ';';
 
-    compiled.footer = new Function(args, body);
+    compiled.footer = new Function(args, replacePageStrings(body));
   }
 
   return compiled;
+}
+
+function replacePageStrings(str) {
+  return str.replace('"currentPage/pageCount"', 'currentPage + \'/\' + pageCount');
 }
 
 module.exports = {
