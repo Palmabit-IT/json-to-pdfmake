@@ -12,6 +12,8 @@ npm install json-to-pdfmake --save
 
 See **json-compiler** docs ([json-compiler](https://github.com/Palmabit-IT/json-compiler));
 
+To add page number to template, insert this string ```'currentPage/pageCount'```.
+
 ## Tests
 
 Run tests locally with:

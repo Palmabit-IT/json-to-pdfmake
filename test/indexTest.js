@@ -62,7 +62,7 @@ describe('Json-compiler', function () {
     };
 
     var compiled = Compiler.compile(obj2);
-console.log(compiled.header.toString());
+
     expect(compiled.header(1, 2)).to.eql({fooHeader: '1/2'});
     expect(compiled.footer(1, 2)).to.eql({fooFooter: '1/2'});
     done();
