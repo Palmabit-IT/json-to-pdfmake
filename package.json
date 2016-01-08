@@ -9,7 +9,7 @@
   "author": "Palmabit <hello@palmabit.com> (http://www.palmabit.com/)",
   "license": "MIT",
   "dependencies": {
-    "json-compiler": "^0.6.0",
+    "json-compiler": "^0.7.0",
     "json-fn": "^0.60.0"
   },
   "devDependencies": {
