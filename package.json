@@ -9,11 +9,11 @@
   "author": "Palmabit <hello@palmabit.com> (http://www.palmabit.com/)",
   "license": "MIT",
   "dependencies": {
-    "json-compiler": "^0.7.0",
+    "json-compiler": "^0.8.0",
     "json-fn": "^0.60.0"
   },
   "devDependencies": {
-    "chai": "^3.4.1",
-    "mocha": "^2.3.4"
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
