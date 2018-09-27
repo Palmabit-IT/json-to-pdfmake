@@ -1,6 +1,6 @@
 {
   "name": "json-to-pdfmake",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Compile with json-compiler for pdfmake",
   "main": "index.js",
   "scripts": {
